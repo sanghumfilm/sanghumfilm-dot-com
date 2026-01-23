@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Sniglet-reg';
+  src: url('../fonts/Sniglet-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sniglet-bold';
+  src: url('../fonts/Sniglet-ExtraBold.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'thabit';
+  src: url('../fonts/thabit.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('../fonts/Barlow-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VG500';
+  src: url('../fonts/VG5000-Regular.otf') format('opentype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avara';
+  src: url('../fonts/Avara-Bold.otf') format('opentype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PP';
+  src: url('../fonts/PPNeueMontreal-Book.otf') format('opentype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PP-bold';
+  src: url('../fonts/PPNeueMontreal-Medium.otf') format('opentype');
+  font-style: normal;
+}
