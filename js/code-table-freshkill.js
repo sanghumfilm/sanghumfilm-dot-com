@@ -34,15 +34,15 @@ $(document).ready(function () {
 							entry.TicketLink +
 							`" src="` +
 							entry.TicketLink +
-							`">` +
+							`" target="_blank">` +
 							entry.TicketPrice +
 							`</a><a src="` +
 							entry.CopresenterLink +
-							`">` +
+							`" target="_blank">` +
 							entry.Copresenter +
 							`</a><p>` +
 							entry.Collaborators +
-							`</p>`
+							`</p>`,
 					).appendTo('#banner-details');
 
 					let img = $(
