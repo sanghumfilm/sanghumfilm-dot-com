@@ -56,7 +56,7 @@ a:hover {
 	position: fixed;
 	top: 0;
 	left: 0;
-	filter: invert(1) saturate(0.1);
+	/* filter: invert(1) saturate(0.1); */
 	z-index: -1;
 }
 
@@ -86,14 +86,15 @@ header nav span a {
 	/* text-shadow: 0px 0px 1px var(--text-color); */
 	background: transparent;
 	outline: none;
+	color: var(--light-color);
 }
 
 header nav a:hover {
 	cursor: grab;
-	color: var(--text-color);
+	color: var(--light-color);
 	text-decoration: underline;
 	text-underline-offset: 3px;
-	text-decoration-color: var(--text-color);
+	text-decoration-color: var(--light-color);
 }
 
 header nav .home {
@@ -157,22 +158,25 @@ header nav .home {
 }
 
 .program__container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+
+	display: grid; 
+	grid-template-columns: repeat(6, 1fr);
 	font-family: var(--secondary-font);
 	flex-wrap: wrap;
 	padding: 0 0.125rem;
+
 }
 
 .program--item {
 	min-width: 180px;
-	width: calc((100% / 6) - 0.25rem);
 	padding: 0;
-	margin: 0 0.125rem 0.25rem 0.125rem;
+	/* margin: 0 0.125rem 0.25rem 0.125rem; */
 	position: relative;
 	border: 1px dotted var(--light-color);
+	margin-right: -1px;
+	margin-bottom: -1px;
 }
+
 
 .program--item[href="#"] {
 cursor: default
@@ -327,15 +331,15 @@ cursor: default
 
 .program--item img {
 	width: 100%;
-	filter: grayscale(100%) contrast(2);
-	mix-blend-mode: exclusion;
+	/* filter: grayscale(100%) contrast(2);
+	mix-blend-mode: exclusion; */
+	filter: grayscale(100%) contrast(4) invert(1);
+  mix-blend-mode: soft-light;
 }
 
 .program--item:hover {
-	/* cursor: grab; */
 	border: 1px solid white;
 	background: var(--text-color);
-	border-radius: 8px;
 }
 
 .program--item[data-upcoming='upcoming']:hover {
@@ -355,7 +359,6 @@ cursor: default
 	filter: grayscale(0%) contrast(1) brightness(1);
 	mix-blend-mode: normal;
 	box-shadow: none;
-	border-radius: 7px 7px 0 0;
 }
 
 .program--item:hover ul {

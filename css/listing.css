@@ -40,6 +40,7 @@ header .header-nav a {
 	text-transform: uppercase;
 	background: transparent;
 	outline: none;
+	color: var(--text-color);
 }
 
 header .header-nav a:hover {
