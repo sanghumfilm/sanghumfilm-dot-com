@@ -13,9 +13,9 @@ $(document).ready(function () {
 				if (index == 0) return;
 
 				let section = $(
-					`<a href="` +
+					`<a href="program/` +
 						entry.SecondaryPage +
-						`" class="program--item" data-confirm="` +
+						`.htm" class="program--item" data-confirm="` +
 						entry.Ready +
 						`" data-upcoming="` +
 						entry.TagUpcoming +

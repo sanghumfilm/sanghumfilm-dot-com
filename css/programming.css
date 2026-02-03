@@ -159,6 +159,7 @@ header nav .home {
 .program__container {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	font-family: var(--secondary-font);
 	flex-wrap: wrap;
 	padding: 0 0.125rem;
@@ -173,8 +174,8 @@ header nav .home {
 	border: 1px dotted var(--light-color);
 }
 
-.program--item[href='#'] {
-	cursor: default;
+.program--item[href="#"] {
+cursor: default
 }
 
 .program--item[data-confirm='hide'],

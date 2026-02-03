@@ -62,8 +62,8 @@ header .back-home:hover::after {
 	content: 'anghum Film Collective';
 }
 
-header .back-programming:hover::after {
-	content: 'to programming';
+header .back-programming:hover::before {
+	content: 'back to ';
 }
 
 .tags__container {
