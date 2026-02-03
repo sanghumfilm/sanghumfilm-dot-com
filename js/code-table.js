@@ -13,7 +13,9 @@ $(document).ready(function () {
 				if (index == 0) return;
 
 				let section = $(
-					`<a href="#" class="program--item" data-confirm="` +
+					`<a href="` +
+						entry.SecondaryPage +
+						`" class="program--item" data-confirm="` +
 						entry.Ready +
 						`" data-upcoming="` +
 						entry.TagUpcoming +
@@ -45,7 +47,7 @@ $(document).ready(function () {
 						entry.OnlineIrl +
 						`" class="filter--online">` +
 						entry.OnlineIrl +
-						`</p></a>`
+						`</p></a>`,
 				).appendTo('#listings');
 			});
 		}
