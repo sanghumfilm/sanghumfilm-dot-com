@@ -275,13 +275,14 @@ header .back-programming:hover::before {
 
 .film-stills {
 	display: flex;
+	height: auto;
 	width: 100%;
 }
 
 .film-stills img {
 	width: 100%;
 	margin: 0;
-	height: auto;
+	height: 100%;
 	padding: 0;
 }
 
