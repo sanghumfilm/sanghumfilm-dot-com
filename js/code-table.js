@@ -13,7 +13,7 @@ $(document).ready(function () {
 				if (index == 0) return;
 
 				let section = $(
-					`<a href="program/` +
+					`<a href="` +
 						entry.SecondaryPage +
 						`" class="program--item" data-confirm="` +
 						entry.Ready +
