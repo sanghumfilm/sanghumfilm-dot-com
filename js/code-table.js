@@ -14,7 +14,7 @@ $(document).ready(function () {
 
 				let section = $(
 					`<a href="` +
-						entry.Ready +
+						entry.SecondaryPage +
 						`" class="program--item" data-confirm="` +
 						entry.Ready +
 						`" data-upcoming="` +
