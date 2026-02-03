@@ -14,7 +14,7 @@ $(document).ready(function () {
 
 				let section = $(
 					`<a href="` +
-						entry.SecondaryPage +
+						entry.Ready +
 						`" class="program--item" data-confirm="` +
 						entry.Ready +
 						`" data-upcoming="` +
@@ -47,7 +47,7 @@ $(document).ready(function () {
 						entry.OnlineIrl +
 						`" class="filter--online">` +
 						entry.OnlineIrl +
-						`</p></a>`,
+						`</p></a>`
 				).appendTo('#listings');
 			});
 		}
