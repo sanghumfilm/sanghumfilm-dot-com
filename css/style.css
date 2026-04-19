@@ -33,6 +33,30 @@ body {
 	width: 100%;
 }
 
+/* landing page background setup */
+.overlay {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+}
+
+.overlay--noise {
+	filter: opacity(0.15);
+	background-image: url(../assets/noise.gif);
+	background-position: center;
+	/* box-shadow: 0px 0px 3rem 1rem white inset; */
+	width: 100%;
+	height: 100%;
+	background-size: 5%;
+	background-repeat: repeat;
+	z-index: 10000;
+	mix-blend-mode: multiply;
+	position: inherit;
+}
+
 .videoloop {
 	position: fixed;
 	top: 0em;
@@ -41,6 +65,16 @@ body {
 	overflow: 100vh;
 	z-index: -1;
 	pointer-events: none;
+}
+
+.videoloop .img {
+	background-image: url(../assets/technospacesonfilm1.jpg);
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	background-size: 1200px;
+	background-repeat: repeat;
+	position: inherit;
 }
 
 #griddrag {
