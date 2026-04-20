@@ -88,7 +88,7 @@ body {
 	cursor: move;
 	display: grid;
 	width: 25%;
-	min-width: 280px;
+	min-width: 300px;
 	background: #0000004d;
 	/* max-width: 460px;
 	background: var(--text-color-secondary); */
@@ -171,18 +171,22 @@ main {
 /* mobile */
 @media (max-width: 740px) {
 	.videoloop {
-		display: none;
+		/* display: none; */
 	}
 
 	body {
-		background-image: url(../assets/kareenax.jpg);
+		/* background-image: url(../assets/kareenax.jpg);
 		background-position: center;
 		background-size: 338px 530px;
-		overflow-y: hidden;
+		overflow-y: hidden; */
+	}
+
+	.videoloop .img {
+		background-size: 110%;
 	}
 
 	#griddrag {
-		position: initial;
+		/* position: initial;
 		transform: translate(0, -50%);
 		mix-blend-mode: normal;
 		z-index: 2;
@@ -192,29 +196,32 @@ main {
 		user-select: none;
 		margin: 50vh auto;
 		background-color: #ffffff;
-		color: black;
+		color: black; */
 	}
 
 	p,
 	nav a {
-		border: 0.7px solid black;
+		/* border: 0.7px solid black;
 		border-bottom: none;
+		padding: 1rem; */
 		padding: 1rem;
+		line-height: 130%;
+		font-size: 16px;
 	}
 
 	nav a,
 	nav a:nth-of-type(1) {
-		color: black;
+		/* color: black; */
 	}
 
 	nav a:last-child {
-		border-bottom: 0.7px solid black;
+		/* border-bottom: 0.7px solid black; */
 	}
 
 	nav a:nth-of-type(1):hover {
-		color: var(--secondary-color);
+		/* color: var(--secondary-color); */
 	}
 	nav a:nth-of-type(1):focus {
-		font-style: oblique;
+		/* font-style: oblique; */
 	}
 }
