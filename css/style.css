@@ -89,6 +89,7 @@ body {
 	display: grid;
 	width: 25%;
 	min-width: 280px;
+	background: #0000004d;
 	/* max-width: 460px;
 	background: var(--text-color-secondary); */
 	touch-action: none;
