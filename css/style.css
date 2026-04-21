@@ -95,7 +95,7 @@ body {
 	touch-action: none;
 	user-select: none;
 	/* box-shadow: 1px 1px 12px var(--text-color-secondary); */
-	/* border: 1px solid var(--text-color); */
+	border: 1px dotted var(--text-color);
 }
 
 #griddrag p a {
@@ -109,8 +109,7 @@ body {
 }
 
 p {
-	border: 1px dotted var(--text-color);
-	border-bottom: none;
+
 	margin: 0;
 	padding: 1em 0.625em;
 	line-height: 130%;
@@ -122,16 +121,10 @@ nav {
 	align-items: stretch;
 }
 
-/* nav a:nth-of-type(1) {
-background-color: var(--secondary-color);
-	color: var(--text-color);
+nav p a {
+border: none;
 }
 
-nav a:nth-of-type(1):hover {
-background-color: #1aff003c;
-	color: var(--secondary-color);
-
-} */
 
 a {
 	text-decoration: none;
@@ -147,15 +140,31 @@ a:hover {
 	color: var(--secondary-color);
 }
 
+ nav p, nav a:not(nav ul li a) {
+	border-top: 1px dotted var(--text-color);
+ }
+
+nav ul {
+margin: 0;
+  padding: 0 1.25em 1em 1.25em;
+  line-height: 130%;
+	list-style: ">";
+}
+
+nav ul li a {
+	color: var(--secondary-color);
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+
 nav a {
-	border: 1px dotted var(--text-color);
-	border-bottom: none;
 	padding: 0.2em 0.625em;
 }
 
-nav a:last-child {
-	border-bottom: 1px dotted var(--text-color);
-}
 
 main {
 }

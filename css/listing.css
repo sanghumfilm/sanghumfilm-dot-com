@@ -19,7 +19,7 @@ a:focus {
 }
 
 header {
-	padding: 0.25rem;
+	/* padding: 0.25rem; */
 	margin: 0;
 }
 
@@ -32,7 +32,7 @@ header .header-nav {
 }
 
 header .header-nav p {
-	margin: 0 0.25rem;
+	/* margin: 0 0.25rem; */
 }
 
 header .header-nav a {
@@ -65,13 +65,14 @@ header .back-home:hover::after {
 	content: 'anghum Film Collective';
 }
 
-header .back-programming:hover::before {
+/* header .back-programming:hover::before {
 	content: 'back to ';
-}
+} */
 
 .tags__container {
 	display: flex;
 	justify-content: center;
+	margin: 2rem 0 0 0;
 }
 
 .__tags {
@@ -83,7 +84,7 @@ header .back-programming:hover::before {
 	padding: 0 0.25rem;
 }
 
-.__tags p {
+.__tags p, .__tags a {
 	margin: 0 0.25rem;
 	font-family: var(--secondary-font);
 	font-size: 0.85rem;
@@ -93,7 +94,7 @@ header .back-programming:hover::before {
 	content: '';
 }
 
-.__tags p:not(.__tags p:last-of-type) {
+.__tags p:not(.__tags p:last-of-type), .__tags a {
 	border-right: 1px dotted var(--text-color);
 	padding-right: 0.5rem;
 }
@@ -102,12 +103,12 @@ header .back-programming:hover::before {
 	display: none;
 }
 
-.banner-title span {
-	margin: 1rem;
+.banner-title {
+	padding: 2rem 0;
 	text-align: center;
 }
 
-.banner-title span h5:first-of-type {
+.banner-title h5:first-of-type {
 	font-family: var(--film-title);
 	font-size: 3.25rem;
 	text-shadow: 6px 0px 1px var(--text-color);
@@ -116,12 +117,12 @@ header .back-programming:hover::before {
 	line-height: 1.6ch;
 }
 
-.banner-title span h5 {
+.banner-title h5 {
 	margin: 0 0.5rem;
 	font-weight: normal;
 }
 
-.banner-title span h5 + h5 {
+.banner-title h5 + h5 {
 	font-family: var(--secondary-color);
 	font-size: 2.5rem;
 	line-height: 1.8ch;
@@ -197,7 +198,7 @@ header .back-programming:hover::before {
 	content: 'Tickets';
 }
 
-.banner-details p:nth-of-type(3)::before {
+.banner-details a:nth-of-type(3)::before {
 	content: 'Collaborators';
 }
 
@@ -289,10 +290,10 @@ header .back-programming:hover::before {
 }
 
 .series {
-	margin: 2rem auto;
+	margin: 1rem auto 3rem auto;
 }
 
-.series div {
+.series p {
 	width: 50%;
 }
 
@@ -307,14 +308,12 @@ header .back-programming:hover::before {
 }
 
 
-.series span p:nth-of-type(2) {
-	text-transform: uppercase;
-	text-shadow: 0 0 1px var(--text-color);
-	border: 1px solid var(--text-color);
-	border-radius: 1rem;
-	padding: 0 0.5rem;
-	margin: 0 0.5rem;
-	box-shadow: 0 0 1px 0 var(--text-color) inset;
+.series p a {
+	text-shadow: 0 0 1px var(--text-color);;
+	margin: 0.25rem 0;
+	/* box-shadow: 0 0 1px 0 var(--text-color) inset; */
+	display: block;
+	width: fit-content;
 }
 
 .inactive {
