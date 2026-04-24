@@ -112,6 +112,10 @@ header .back-home:hover::after {
 	font-size: 0.85rem;
 }
 
+.__tags a {
+	text-shadow: 0 0px 2px var(--secondary-color);
+}
+
 .__tags p:not(.__tags p:last-of-type)::after {
 	content: '';
 }
@@ -180,7 +184,7 @@ header .back-home:hover::after {
 	cursor: pointer;
 }
 
-.banner-details a:hover, .film-meta a:hover {
+.banner-details a:hover, .film-meta a:hover, .__tags a:hover  {
 	color: var(--text-color);
 	text-shadow: 0px 0px 1px var(--text-color);
 }
