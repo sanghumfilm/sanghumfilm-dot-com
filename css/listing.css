@@ -1,23 +1,20 @@
 @import 'font.css';
 
 @keyframes highlight {
-  0% {
-    color: var(--text-color);
-    background: var(--secondary-color);
+	0% {
+		color: var(--text-color);
+		background: var(--secondary-color);
+	}
 
-  }
+	70% {
+		color: var(--text-color);
+		background: var(--secondary-color);
+	}
 
-  70% {
-    color: var(--text-color);
-    background: var(--secondary-color);
-
-  }
-
-  72% {
-    color: var(--text-color);
-    background: transparent;
- 
-  }
+	72% {
+		color: var(--text-color);
+		background: transparent;
+	}
 }
 
 a {
@@ -225,7 +222,7 @@ header .back-home:hover::after {
 .banner-details p::before,
 .banner-details a::before,
 .dir-bio p::before,
-	.series p:first-of-type::before {
+.series p:first-of-type::before {
 	font-size: 0.65rem;
 	position: absolute;
 	transform: translateY(-1.5em);
@@ -330,15 +327,15 @@ header .back-home:hover::after {
 	content: 'DIRECTOR';
 }
 
-	.series p:first-of-type::before {
-		content: 'SERIES';
-	}
+.series p:first-of-type::before {
+	content: 'SERIES';
+}
 
 .film-stills {
 	display: flex;
 	height: auto;
 	width: 100%;
-	flex-direction: column;
+	/* flex-direction: column; */
 }
 
 .film-stills img {
@@ -403,15 +400,25 @@ header .back-home:hover::after {
 /* breakpoints */
 
 @media (max-width: 820px) {
-	  .banner-details {
-			display: grid;
-			grid-template-columns: 50% 50%;
-		}
+	.banner-title {
+		padding: 2rem 0 0 0;
+	}
 
-  .banner-details * {
-	width: 100%;
+	.banner-title h5:first-of-type {
+		line-height: 1.25ch;
+		margin-bottom: 1rem;
+		font-family: 'Arial Black', 'Arial Narrow', sans-serif;
+		letter-spacing: 2px;
+	}
 
-}
+	.banner-details {
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+
+	.banner-details * {
+		width: 100%;
+	}
 
 	.banner-details,
 	.banner-img,
@@ -424,24 +431,41 @@ header .back-home:hover::after {
 		width: calc(((100% / 5) - 0.25rem) * 5);
 	}
 
-	 .banner-details p, .banner-details a {
-		margin-top: 2rem;
-	 }
-
-	 .film-description p {
-		text-align: left;
-	 }
-
-	 .film-meta p, .film-meta a {
-		text-align: center;
-	 }
-
-	 .dir-bio p,
-	.series p {
-		width: 100%;
+	.banner-details p,
+	.banner-details a {
+		margin-top: 2.5rem;
+		font-size: 1.25rem;
 	}
 
+	.film-description p {
+		text-align: left;
+	}
 
+	.film-meta p,
+	.film-meta a {
+		text-align: center;
+	}
+
+	.dir-bio p,
+	.series p {
+		width: 100%;
+		font-size: 1.25rem;
+	}
+
+	.dir-bio {
+		margin: 3rem auto 2rem auto;
+	}
+
+	.banner-details p::before,
+	.banner-details a::before,
+	.dir-bio p::before,
+	.series p:first-of-type::before {
+		transform: translateY(-2em);
+	}
+
+	.film-stills {
+		flex-direction: column;
+	}
 }
 
 @media (max-width: 640px) {
@@ -458,6 +482,4 @@ header .back-home:hover::after {
 	/* .banner-details * {
 		width: calc(20% - 1rem);
 	} */
-
-	
 }
